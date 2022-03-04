@@ -1,6 +1,11 @@
 pico-8 cartridge // http://www.pico-8.com
-version 34
+version 35
 __lua__
+--initialize
+
+function _init()
+scene="menu"
+--game
 grid_x=0
 grid_y=0 
 
@@ -10,50 +15,9 @@ x=64
 y=64
 dx=0 
 dy=0
-speed = 1
-
-
-function _init_()
-
 
 end
 
---maping etc
-
-function _update()
-
-	grid_x=flr(x/8) 
-	grid_y=flr(y/8)
-	flag_tile = fget(mget(grid_x,grid_y))
-	
-	if btn(0) then dx=-speed end
-	if btn(1) then dx=speed end
-	if btn(2) then dy=-speed end
-	if btn(3) then dy=speed end
-	
-	if map_collision(x+dx,y,7,7) then
-		dx=0 
-	end
-	
-	if map_collision(x,y+dy,7,7) then
-		dy=0 
-	end
-	
-	x+=dx
-	y+=dy
-	 
-	bounds()
-end 
-
-function _draw()
--- all the code that 
--- draaws things to the screen
-	cls()
-	map(0,0,0,0,16,16)	
-	spr(1,x,y)
-
-	
-end
 
 --removes boundaries
 --function wrap() 
@@ -89,9 +53,83 @@ function map_collision(x,y,w,h)
 end
 
 -->8
+--updates
+function update_menu()
+		if btnp(❎) then
+				scene="game"
+		end
+end
+
+--mapping etc
+function update_game()
+ grid_x=flr(x/8) 
+	grid_y=flr(y/8)
+	flag_tile = fget(mget(grid_x,grid_y))
+	
+	if btn(⬅️) then dx-=1 end
+	if btn(➡️) then dx+=1 end
+	if btn(⬆️) then dy-=1 end
+	if btn(⬇️) then dy+=1 end
+	--temporary switch to go back to menu
+	if btnp(❎) then
+			scene="menu"
+	end
+	
+	if map_collision(x+dx,y,7,7) then
+		dx=0 
+	end
+	
+	if map_collision(x,y+dy,7,7) then
+		dy=0 
+	end
+	
+	x+=dx
+	y+=dy
+	 
+	bounds()
+
+end
 
 
 
+
+
+
+-->8
+--draws
+
+function draw_menu()
+		cls()
+		print("prison break",32,30,10)
+		print("-press x to start-",32,80,1)
+end
+
+function draw_game()
+-- all the code that 
+-- draaws things to the screen
+	cls()
+	map(0,0,0,0,16,16)	
+	spr(1,x,y)
+
+end
+-->8
+--main updates & draws
+
+function _update()
+		if scene=="menu" then
+				update_menu()
+		elseif scene=="game" then
+				update_game()
+		end
+end
+
+function _draw()
+		if scene=="menu" then
+				draw_menu()
+		elseif scene=="game" then
+				draw_game()
+		end
+end
 __gfx__
 000000000055550011111d1100000000100011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000055555501d1111116566056600001101d0d1dd1d00000000000000000000000000000000000000000000000000000000000000000000000000000000
