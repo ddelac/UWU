@@ -9,12 +9,16 @@ function _init()
 	make_player()
 	game_win=false
 	game_over=false
+	scene="menu"
 end
 
 function _update()
-	if (not game_over) then
+	if (scene=="menu") then
+		update_menu()
+	elseif (not game_over) or (scene=="game") then
 		update_map()
 		move_player()
+		update_menu()
 		check_win_lose()
 	else
 		if (btnp(❎)) extcmd("reset")
@@ -22,8 +26,10 @@ function _update()
 end
 
 function _draw()
-	cls()
-	if (not game_over) then
+	cls() 
+	if (scene=="menu") then
+		draw_menu()
+	elseif (not game_over) or (scene=="game") then
 		draw_map()
 		draw_player()
 		if (btn(❎)) show_inventory()
@@ -171,9 +177,11 @@ function check_win_lose()
 	if (is_tile(win,p.x,p.y)) then
 		game_win=true
 		game_over=true	
+		scene=true
 	elseif (is_tile(lose,p.x,p.y)) then
 		game_win=false
 		game_over=true
+		scene=true
 	end
 end
 
@@ -185,6 +193,19 @@ function draw_win_lose()
 		print("game over!", 38,64,7)
 	end
 		print("press ❎ to play again",20,72,5)
+end
+-->8
+--update and draw menu
+function draw_menu()
+	cls()
+		print("prison break",32,30,10)
+		print("-press ❎ to start-",32,80,1)
+end
+
+function update_menu()
+		if btnp(❎) then
+				scene="game"
+		end
 end
 __gfx__
 00000000000000000000000000000000111110006611116600111100000000006666666666666666000000006666666666666666000000000000000000000000
