@@ -1,50 +1,97 @@
 [000000] codo_init
 [000000]   platform: Max OS X
+[000000]   Found config.txt
+[000000]   
+[000000]     01 window_size 0 0 // window width, height
+[000000]     02 screen_size 0 0 // screen width, height (stretched to window) 
+[000000]     03 show_fps 0 // Draw frames per second in the corner
+[000000]     04 windowed 1 // 1 to start up in windowed mode
+[000000]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
+[000000]     new window position: -1, -1
+[000000]     06 frameless 0 // 1 to use a window with no frame
+[000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
+[000000]     08 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
+[000000]     09 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
+[000000]     10 sessions 4 // number of times program has been run
+[000000]     11 rmb_key 0 // 0 for none  226 for LALT
+[000000]     12 desktop_path 
+[000000]     13 sound_volume 256 // 0..256
+[000000]     14 music_volume 256 // 0..256
+[000000]     15 mix_buffer_size 1024
+[000000]     16 version 0.2.4B
+[000000]     17 volume 256
+[000000]     18 root_path /Users/devinthaker/UWU/carts/
+[000000]     19 cdata_path /Users/devinthaker/UWU/cdata/
+[000000]     20 joystick_index 0
+[000000]     21 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[000000]     22 live_notes 0
+[000000]     23 cursor_snap 0
+[000000]     24 gui_theme 0
+[000000]     25 screenshot_scale 3
+[000000]     26 gif_scale 3
+[000000]     27 gif_len 16
+[000000]     28 gif_reset_mode 0
+[000000]     29 host_framerate_control 1
+[000000]     30 splore_filter 0
+[000000]     31 tab_width 1
+[000000]     32 draw_tabs 0
+[000000]     33 record_activity_log 1
+[000000]     34 allow_function_keys 1
+[000000]     35 check_for_cart_updates 1
+[000000]     36 auto_hide_mouse_cursor 5
+[000000]     37 aggressive_backups 0
+[000000]     38 transform_screen 0
+[000000]   
 [000000]   codo_system_init
-[000232]   Compiled against SDL version: 2.0.12
-[000232]   Linked against SDL version:   2.0.12
-[000232]   Current video driver: cocoa
-[000232]   codo_reset_timer
-[000232]   codo_gui_init
-[000232]   codo_keys_init
-[000232]   codo_text_init
-[000232]   codo_video_init
-[000232]   codo_mouse_init
-[000232]   codo_joystick_init
-[000232]   searching for joysticks
-[000232]     found 0 joysticks
-[000232]   ok
-[000233] ok
-[000239] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
-[000241] codo_set_screen 128 128 8 100
-[000241]  window size: 640 540
-[000270]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000260]   Compiled against SDL version: 2.0.12
+[000260]   Linked against SDL version:   2.0.12
+[000260]   Current video driver: cocoa
+[000260]   codo_reset_timer
+[000260]   codo_gui_init
+[000260]   codo_keys_init
+[000260]   codo_text_init
+[000260]   codo_video_init
+[000260]   codo_mouse_init
+[000260]   codo_joystick_init
+[000260]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
+[000260]   searching for joysticks
+[000260]     found 0 joysticks
+[000260]   ok
+[000260] ok
+[000269] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
+[000271] codo_set_screen 128 128 8 100
+[000271]  window size: 640 540
+[000305]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer metal:
    flags: 0x0000000E ( |  | )
    texture formats (6): ARGB8888, ABGR8888, YV12, IYUV, 0x3231564e, 0x3132564e
    max texture size: 16384x16384
-[000271]  desktop size: 3440 1440
-[000271] ok
-[000277] codo_sound_init mix_buffer_size: 1024
-[000277] codo_sound_init
-[000277] SDL_INIT_AUDIO ok
-[000345] SDL_OpenAudio ok
-[000345]  freq:22050
+[000306]  desktop size: 3440 1440
+[000306] ok
+[000312] codo_sound_init mix_buffer_size: 1024
+[000312] codo_sound_init
+[000312] SDL_INIT_AUDIO ok
+[000378] SDL_OpenAudio ok
+[000378]  freq:22050
  channels:1
-[000345] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
-[000345] Current audio driver: coreaudio
-[000345] splore_init
-[000345] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
-[002402] loading /Users/devinthaker/UWU/game-1.p8
-[004078] run_cart current_filename: /Users/devinthaker/UWU/game-1.p8 running_filename: /Users/devinthaker/UWU/game-1.p8 running_cart_lid: 
-[040084] window closed (14)
-[040084] codo_exit
-[040084]   cmusic_stop
-[040084]   codo_main_exit
-[040085]   codo_config_save
-[040086]   codo_sound_exit
-[040086]   codo_video_exit
-[040097]   codo_joystick_exit
-[040098]   codo_system_exit
-[040098]   codo_items_created: 1288
-[040098] ok
+[000378] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
+[000378] Current audio driver: coreaudio
+[000378] splore_init
+[000378] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
+[002475] loading /Users/devinthaker/UWU/uwulogo.p8
+[004150] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[177710] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[185232] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[189641] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[489095] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[501661] window closed (14)
+[501662] codo_exit
+[501662]   cmusic_stop
+[501662]   codo_main_exit
+[501663]   codo_config_save
+[501664]   codo_sound_exit
+[501664]   codo_video_exit
+[501674]   codo_joystick_exit
+[501674]   codo_system_exit
+[501674]   codo_items_created: 1295
+[501674] ok
