@@ -30,7 +30,7 @@ function _draw()
 	if (text_timer == 5)	sfx(1)
 	if (text_timer == 15) sfx(2)
 	if (text_timer > 5)	print("uwu",59,64,14)
-	if (text_timer > 15) print("studio",54,72,9)
+	if (text_timer > 15) print("studios   ",54,72,9)
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

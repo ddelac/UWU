@@ -87,3 +87,27 @@
 [108289] saving gif to: /Users/devinthaker/Desktop/uwulogo_1.gif
 [126757] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
 [131544] saving gif to: /Users/devinthaker/Desktop/uwulogo_2.gif
+[911153] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[927720] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[946590] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[966611] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[976182] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[984525] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1142407] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1528196] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1541586] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1552636] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1553225] saving gif to: /Users/devinthaker/Desktop/uwulogo_0.gif
+[1559156] run_cart current_filename: /Users/devinthaker/UWU/uwulogo.p8 running_filename: /Users/devinthaker/UWU/uwulogo.p8 running_cart_lid: 
+[1563462] saving gif to: /Users/devinthaker/Desktop/uwulogo_1.gif
+[9959750] window closed (14)
+[9959754] codo_exit
+[9959754]   cmusic_stop
+[9959754]   codo_main_exit
+[9959756]   codo_config_save
+[9959757]   codo_sound_exit
+[9959757]   codo_video_exit
+[9959760]   codo_joystick_exit
+[9959760]   codo_system_exit
+[9959761]   codo_items_created: 1299
+[9959761] ok
