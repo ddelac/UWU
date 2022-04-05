@@ -174,7 +174,12 @@ add(pu,{s=21,x=15, y=11})
 end
 
 function update_pickups()
-
+	-- for p in all(pu) do
+	-- 	if aabb_collide(newx,newy,p.w,p.h,p.x*8+1,p.y*8,4,6) 
+	-- 	then
+	-- 	del(pu,p)
+	-- 	end
+	-- end
 end
 
 function draw_pickups()
@@ -185,6 +190,19 @@ function draw_pickups()
 
 end
 
+-- -->8
+-- --collide code 
+-- function aabb_collide(x1,y1,w1,h1,x2,y2,w2,h2)
+
+-- if x1 < x2 + w2 and
+-- 	x1 + w1 > x2 and
+-- 	y1 < y2 + h2 and
+-- 	y1 + h1 > y2 
+-- then
+-- 	return true
+-- end
+-- return false
+-- end
 
 
 __gfx__
