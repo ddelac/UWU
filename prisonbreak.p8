@@ -120,10 +120,10 @@ function move_player()
 	newx=p.x
 	newy=p.y
 	
-	if (btnp(⬅️)) newx-=1
-	if (btnp(➡️)) newx+=1
-	if (btnp(⬆️)) newy-=1
-	if (btnp(⬇️)) newy+=1
+	if (btnp(⬅️)) newx-=1.5
+	if (btnp(➡️)) newx+=1.5
+	if (btnp(⬆️)) newy-=1.5
+	if (btnp(⬇️)) newy+=1.5
 	
 	interact(newx,newy)
 	
