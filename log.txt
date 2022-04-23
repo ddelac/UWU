@@ -12,7 +12,7 @@
 [000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
 [000000]     08 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
 [000000]     09 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000000]     10 sessions 49 // number of times program has been run
+[000000]     10 sessions 50 // number of times program has been run
 [000000]     11 rmb_key 0 // 0 for none  226 for LALT
 [000000]     12 desktop_path 
 [000000]     13 sound_volume 256 // 0..256
@@ -43,54 +43,39 @@
 [000000]     38 transform_screen 0
 [000000]   
 [000000]   codo_system_init
-[000257]   Compiled against SDL version: 2.0.12
-[000257]   Linked against SDL version:   2.0.12
-[000257]   Current video driver: cocoa
-[000257]   codo_reset_timer
-[000257]   codo_gui_init
-[000257]   codo_keys_init
-[000257]   codo_text_init
-[000257]   codo_video_init
-[000257]   codo_mouse_init
-[000257]   codo_joystick_init
-[000258]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
-[000258]   searching for joysticks
-[000258]     found 0 joysticks
-[000258]   ok
-[000258] ok
-[000263] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
-[000266] codo_set_screen 128 128 8 100
-[000266]  window size: 640 540
-[000298]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000236]   Compiled against SDL version: 2.0.12
+[000236]   Linked against SDL version:   2.0.12
+[000236]   Current video driver: cocoa
+[000237]   codo_reset_timer
+[000237]   codo_gui_init
+[000237]   codo_keys_init
+[000237]   codo_text_init
+[000238]   codo_video_init
+[000238]   codo_mouse_init
+[000238]   codo_joystick_init
+[000238]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
+[000238]   searching for joysticks
+[000238]     found 0 joysticks
+[000238]   ok
+[000238] ok
+[000247] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
+[000250] codo_set_screen 128 128 8 100
+[000250]  window size: 640 540
+[000280]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer metal:
    flags: 0x0000000E ( |  | )
    texture formats (6): ARGB8888, ABGR8888, YV12, IYUV, 0x3231564e, 0x3132564e
    max texture size: 16384x16384
-[000299]  desktop size: 3440 1440
-[000299] ok
-[000305] codo_sound_init mix_buffer_size: 1024
-[000305] codo_sound_init
-[000305] SDL_INIT_AUDIO ok
-[000365] SDL_OpenAudio ok
-[000365]  freq:22050
+[000282]  desktop size: 3440 1440
+[000282] ok
+[000288] codo_sound_init mix_buffer_size: 1024
+[000288] codo_sound_init
+[000288] SDL_INIT_AUDIO ok
+[000362] SDL_OpenAudio ok
+[000362]  freq:22050
  channels:1
-[000365] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
-[000365] Current audio driver: coreaudio
-[000365] splore_init
-[000365] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
-[002425] loading /Users/devinthaker/UWU/white_lightening.p8
-[004099] run_cart current_filename: /Users/devinthaker/UWU/white_lightening.p8 running_filename: /Users/devinthaker/UWU/white_lightening.p8 running_cart_lid: 
-[013373] run_cart current_filename: /Users/devinthaker/UWU/white_lightening.p8 running_filename: /Users/devinthaker/UWU/white_lightening.p8 running_cart_lid: 
-[020992] run_cart current_filename: /Users/devinthaker/UWU/white_lightening.p8 running_filename: /Users/devinthaker/UWU/white_lightening.p8 running_cart_lid: 
-[042420] saving gif to: /Users/devinthaker/Desktop/white_lightening_1.gif
-[083671] window closed (14)
-[083672] codo_exit
-[083672]   cmusic_stop
-[083672]   codo_main_exit
-[083673]   codo_config_save
-[083674]   codo_sound_exit
-[083674]   codo_video_exit
-[083683]   codo_joystick_exit
-[083683]   codo_system_exit
-[083684]   codo_items_created: 1289
-[083684] ok
+[000362] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
+[000362] Current audio driver: coreaudio
+[000362] splore_init
+[000362] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
+[002449] loading /Users/devinthaker/UWU/prisonbreak.p8
