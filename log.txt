@@ -12,7 +12,7 @@
 [000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
 [000000]     08 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
 [000000]     09 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000000]     10 sessions 88 // number of times program has been run
+[000000]     10 sessions 89 // number of times program has been run
 [000000]     11 rmb_key 0 // 0 for none  226 for LALT
 [000000]     12 desktop_path 
 [000000]     13 sound_volume 256 // 0..256
@@ -43,41 +43,40 @@
 [000000]     38 transform_screen 0
 [000000]   
 [000000]   codo_system_init
-[000070]   Compiled against SDL version: 2.0.12
-[000070]   Linked against SDL version:   2.0.12
-[000070]   Current video driver: cocoa
-[000070]   codo_reset_timer
-[000070]   codo_gui_init
-[000070]   codo_keys_init
-[000070]   codo_text_init
-[000070]   codo_video_init
-[000070]   codo_mouse_init
-[000070]   codo_joystick_init
-[000070]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
-[000070]   searching for joysticks
-[000070]     found 0 joysticks
-[000070]   ok
-[000070] ok
-[000076] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
-[000078] codo_set_screen 128 128 8 100
-[000078]  window size: 640 540
-[000116]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000074]   Compiled against SDL version: 2.0.12
+[000074]   Linked against SDL version:   2.0.12
+[000074]   Current video driver: cocoa
+[000074]   codo_reset_timer
+[000074]   codo_gui_init
+[000074]   codo_keys_init
+[000074]   codo_text_init
+[000074]   codo_video_init
+[000074]   codo_mouse_init
+[000074]   codo_joystick_init
+[000074]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
+[000074]   searching for joysticks
+[000074]     found 0 joysticks
+[000074]   ok
+[000074] ok
+[000081] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
+[000083] codo_set_screen 128 128 8 100
+[000083]  window size: 640 540
+[000114]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer metal:
    flags: 0x0000000E ( |  | )
    texture formats (6): ARGB8888, ABGR8888, YV12, IYUV, 0x3231564e, 0x3132564e
    max texture size: 16384x16384
-[000117]  desktop size: 1800 1169
-[000117] ok
-[000124] codo_sound_init mix_buffer_size: 1024
-[000124] codo_sound_init
-[000124] SDL_INIT_AUDIO ok
-[000193] SDL_OpenAudio ok
-[000193]  freq:22050
+[000115]  desktop size: 1800 1169
+[000115] ok
+[000122] codo_sound_init mix_buffer_size: 1024
+[000122] codo_sound_init
+[000122] SDL_INIT_AUDIO ok
+[000183] SDL_OpenAudio ok
+[000183]  freq:22050
  channels:1
-[000193] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
-[000193] Current audio driver: coreaudio
-[000193] splore_init
-[000193] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
-[002275] loading /Users/devinthaker/UWU/prisonbreak.p8
-[003950] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
-[342741] saving gif to: /Users/devinthaker/Desktop/prisonbreak_2.gif
+[000183] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
+[000183] Current audio driver: coreaudio
+[000183] splore_init
+[000183] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
+[002247] loading /Users/devinthaker/UWU/prisonbreak.p8
+[003922] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
