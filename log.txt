@@ -80,3 +80,4 @@
 [000183] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
 [002247] loading /Users/devinthaker/UWU/prisonbreak.p8
 [003922] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[199198] saving gif to: /Users/devinthaker/Desktop/prisonbreak_4.gif

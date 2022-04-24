@@ -43,7 +43,7 @@ function _draw()
 				minutes = counter/60
 				print(flr(minutes),1 + mapx*8,1 + mapy,8)
 				print(":",4 + mapx*8,1 + mapy,10)
-				print(flr(counter),7 + mapx*8,1 + mapy*8,10)
+				print(flr(counter),7 + mapx*8,1 + mapy*8,10) 
 			else
 				print(flr(counter),1 + mapx*8,1 + mapy*8,10)
 			end
