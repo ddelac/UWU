@@ -45,13 +45,13 @@ function _draw()
 			if (counter > 60) then
 				minutes = counter/60
 				print(flr(minutes),1 + mapx*8,1 + mapy,8)
-				print(":",4 + mapx*8,1 + mapy,8)
+				--print(":",4 + mapx*8,1 + mapy,8)
 				if (counter < 10) then 
-				 print(flr(counter),7 + mapx*8,1 + mapy*8,8)
+				 print(flr(counter),9 + mapx*8,1 + mapy*8,8)
 				 end
-				print(flr(counter%60),7 + mapx*8,1 + mapy*8,8)
+				print(flr(counter%60),9 + mapx*8,1 + mapy*8,8)
 				print(flr(minutes),1 + mapx*8,1 + mapy,8)
-				print(":",4 + mapx*8,1 + mapy,8)
+				print(":",6 + mapx*8,1 + mapy,8)
 			else
 				print(flr(counter),1 + mapx*8,1 + mapy*8,8)
 			end

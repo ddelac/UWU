@@ -43,40 +43,51 @@
 [000000]     38 transform_screen 0
 [000000]   
 [000000]   codo_system_init
-[000074]   Compiled against SDL version: 2.0.12
-[000074]   Linked against SDL version:   2.0.12
-[000074]   Current video driver: cocoa
-[000074]   codo_reset_timer
-[000074]   codo_gui_init
-[000074]   codo_keys_init
-[000074]   codo_text_init
-[000074]   codo_video_init
-[000074]   codo_mouse_init
-[000074]   codo_joystick_init
-[000074]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
-[000074]   searching for joysticks
-[000074]     found 0 joysticks
-[000074]   ok
-[000074] ok
-[000080] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
-[000082] codo_set_screen 128 128 8 100
-[000082]  window size: 640 540
-[000114]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000083]   Compiled against SDL version: 2.0.12
+[000083]   Linked against SDL version:   2.0.12
+[000083]   Current video driver: cocoa
+[000083]   codo_reset_timer
+[000083]   codo_gui_init
+[000083]   codo_keys_init
+[000083]   codo_text_init
+[000083]   codo_video_init
+[000083]   codo_mouse_init
+[000083]   codo_joystick_init
+[000084]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
+[000084]   searching for joysticks
+[000084]     found 0 joysticks
+[000084]   ok
+[000084] ok
+[000089] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
+[000092] codo_set_screen 128 128 8 100
+[000092]  window size: 640 540
+[000131]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer metal:
    flags: 0x0000000E ( |  | )
    texture formats (6): ARGB8888, ABGR8888, YV12, IYUV, 0x3231564e, 0x3132564e
    max texture size: 16384x16384
-[000115]  desktop size: 1800 1169
-[000115] ok
-[000122] codo_sound_init mix_buffer_size: 1024
-[000122] codo_sound_init
-[000122] SDL_INIT_AUDIO ok
-[000178] SDL_OpenAudio ok
-[000178]  freq:22050
+[000133]  desktop size: 1800 1169
+[000133] ok
+[000140] codo_sound_init mix_buffer_size: 1024
+[000140] codo_sound_init
+[000140] SDL_INIT_AUDIO ok
+[000202] SDL_OpenAudio ok
+[000202]  freq:22050
  channels:1
-[000178] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
-[000178] Current audio driver: coreaudio
-[000178] splore_init
-[000178] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
-[002248] loading /Users/devinthaker/UWU/prisonbreak.p8
-[003921] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[000202] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
+[000202] Current audio driver: coreaudio
+[000202] splore_init
+[000202] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
+[002269] loading /Users/devinthaker/UWU/prisonbreak.p8
+[003942] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[154240] window closed (14)
+[154240] codo_exit
+[154240]   cmusic_stop
+[154240]   codo_main_exit
+[154242]   codo_config_save
+[154242]   codo_sound_exit
+[154242]   codo_video_exit
+[154249]   codo_joystick_exit
+[154249]   codo_system_exit
+[154249]   codo_items_created: 1289
+[154249] ok
