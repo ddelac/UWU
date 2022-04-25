@@ -19,9 +19,12 @@ end
 counter = 0
 
 function _update()
-	local fps=stat(8)
-	dt = 1/fps
-	counter += dt
+	
+	if(not game_over) then
+		local fps=stat(8)
+		dt = 1/fps
+		counter += dt
+	end
 	if (not game_over) then
 		update_map()
 		move_player()
@@ -43,7 +46,7 @@ function _draw()
 				minutes = counter/60
 				print(flr(minutes),1 + mapx*8,1 + mapy,8)
 				print(":",4 + mapx*8,1 + mapy,10)
-				print(flr(counter),7 + mapx*8,1 + mapy*8,10) 
+				print(flr(counter-60),7 + mapx*8,1 + mapy*8,10) 
 			else
 				print(flr(counter),1 + mapx*8,1 + mapy*8,10)
 			end
@@ -166,6 +169,18 @@ function interact(x,y)
 	elseif (is_tile(door,x,y) and p.keys>0) then
 		open_door(x,y)
 	end
+
+--david win or lose functions	
+	if(is_tile(win,x,y)) then
+		get_key(x,y)
+		game_win=true
+		game_over=true
+	end
+	if(is_tile(lose,x,y)) then
+		get_key(x,y)
+		game_lose=true
+		game_over=true
+	end
 end
 
 -->8
@@ -212,9 +227,10 @@ end
 function draw_win_lose()
 	camera()
 	if (game_win) then
-		print("★ you win ! ★", 37,64,7)
+		print("you have escaped prison!", 15,50,7)
+		print('it took you ' ..flr(counter).. ' seconds')
 	else
-		print("game over!", 38,64,7)
+		print('you got caught in '..flr(counter).. ' seconds!' , 15,50,7)
 	end
 		print("press ❎ to play again",20,72,5)
 end
@@ -591,7 +607,7 @@ dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 __gff__
-0000000140404000020000481000000000000001000000000301008000000000000000010101000005000000000000000000010000000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000140404000020000481000000000000001000000000301008000000000000000010101000005008080000000000000010000000000050080800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 __map__
 2323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232327231212111111242424242424242424
