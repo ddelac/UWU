@@ -12,7 +12,7 @@
 [000000]     07 fullscreen_method 1 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
 [000000]     08 foreground_sleep_ms 2 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
 [000000]     09 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
-[000000]     10 sessions 104 // number of times program has been run
+[000000]     10 sessions 109 // number of times program has been run
 [000000]     11 rmb_key 0 // 0 for none  226 for LALT
 [000000]     12 desktop_path 
 [000000]     13 sound_volume 256 // 0..256
@@ -43,62 +43,63 @@
 [000000]     38 transform_screen 0
 [000000]   
 [000000]   codo_system_init
-[000079]   Compiled against SDL version: 2.0.12
-[000079]   Linked against SDL version:   2.0.12
-[000079]   Current video driver: cocoa
-[000079]   codo_reset_timer
-[000079]   codo_gui_init
-[000079]   codo_keys_init
-[000079]   codo_text_init
-[000079]   codo_video_init
-[000079]   codo_mouse_init
-[000079]   codo_joystick_init
-[000079]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
-[000079]   searching for joysticks
-[000079]     found 0 joysticks
-[000079]   ok
-[000079] ok
-[000085] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
-[000087] codo_set_screen 128 128 8 100
-[000087]  window size: 640 540
-[000116]   setting filter to nearest (screen_mode 0  back page width: 128)
+[000300]   Compiled against SDL version: 2.0.12
+[000300]   Linked against SDL version:   2.0.12
+[000300]   Current video driver: cocoa
+[000300]   codo_reset_timer
+[000300]   codo_gui_init
+[000300]   codo_keys_init
+[000300]   codo_text_init
+[000301]   codo_video_init
+[000301]   codo_mouse_init
+[000301]   codo_joystick_init
+[000301]   Reading controller mappings: /Users/devinthaker/UWU/sdl_controllers.txt
+[000301]   searching for joysticks
+[000301]     found 0 joysticks
+[000301]   ok
+[000301] ok
+[000308] codo_load_pod: /Applications/pico-8/PICO-8.app/Contents/MacOS/pico8.dat ok 
+[000310] codo_set_screen 128 128 8 100
+[000310]  window size: 640 540
+[000353]   setting filter to nearest (screen_mode 0  back page width: 128)
   renderer metal:
    flags: 0x0000000E ( |  | )
    texture formats (6): ARGB8888, ABGR8888, YV12, IYUV, 0x3231564e, 0x3132564e
    max texture size: 16384x16384
-[000117]  desktop size: 1800 1169
-[000117] ok
-[000124] codo_sound_init mix_buffer_size: 1024
-[000124] codo_sound_init
-[000124] SDL_INIT_AUDIO ok
-[000182] SDL_OpenAudio ok
-[000182]  freq:22050
+[000355]  desktop size: 3440 1440
+[000355] ok
+[000361] codo_sound_init mix_buffer_size: 1024
+[000361] codo_sound_init
+[000361] SDL_INIT_AUDIO ok
+[000433] SDL_OpenAudio ok
+[000433]  freq:22050
  channels:1
-[000182] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
-[000182] Current audio driver: coreaudio
-[000182] splore_init
-[000182] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
-[002243] loading /Users/devinthaker/UWU/prisonbreak_demo.p8
-[003916] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[005618] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[009927] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[011193] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[012566] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[019408] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[020780] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[021812] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[022716] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[027524] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[028559] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[030126] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_filename: /Users/devinthaker/UWU/prisonbreak_demo.p8 running_cart_lid: 
-[031826] window closed (14)
-[031827] codo_exit
-[031827]   cmusic_stop
-[031827]   codo_main_exit
-[031827]   codo_config_save
-[031828]   codo_sound_exit
-[031828]   codo_video_exit
-[031834]   codo_joystick_exit
-[031834]   codo_system_exit
-[031834]   codo_items_created: 1289
-[031834] ok
+[000433] Built-in audio drivers: 0 coreaudio 1 disk 2 dummy
+[000433] Current audio driver: coreaudio
+[000433] splore_init
+[000433] could not load favourites file: /Users/devinthaker/UWU/favourites.txt
+[002513] loading /Users/devinthaker/UWU/prisonbreak.p8
+[004188] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[008660] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[074476] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[076048] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[092837] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[123146] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[126854] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[142910] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[150989] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[157501] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[166643] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[176024] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[177295] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[198718] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[210036] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[260289] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[287156] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[316423] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[333580] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[347235] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[356480] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[358184] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[363926] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
+[371976] run_cart current_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_filename: /Users/devinthaker/UWU/prisonbreak.p8 running_cart_lid: 
