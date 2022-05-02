@@ -4,13 +4,12 @@ __lua__
 --prison break
 --by -uwu- team
 
-
-
 function _init()
 	map_setup()
 	make_player()
 	--neks update
 	create_enemies()
+	music(0)
 
 	game_win=false
 	game_over=false
@@ -18,8 +17,7 @@ end
 
 counter = 0
 
-function _update()
-	
+function _update()	
 	if(not game_over) then
 		local fps=stat(8)
 		dt = 1/fps
@@ -44,14 +42,14 @@ function _draw()
 		draw_player()
 			if (counter > 60) then
 				minutes = counter/60
-				print(flr(minutes),1 + mapx*8,1 + mapy,8)
+				print(flr(minutes),1 + mapx*8,1 + mapy*8,8)
 				--print(":",4 + mapx*8,1 + mapy,8)
 				if (counter < 10) then 
 				 print(flr(counter),9 + mapx*8,1 + mapy*8,8)
 				 end
 				print(flr(counter%60),9 + mapx*8,1 + mapy*8,8)
 				print(flr(minutes),1 + mapx*8,1 + mapy,8)
-				print(":",6 + mapx*8,1 + mapy,8)
+				print(":",6 + mapx*8,1 + mapy*8,8)
 			else
 				print(flr(counter),1 + mapx*8,1 + mapy*8,8)
 			end
@@ -182,7 +180,6 @@ function interact(x,y)
 		game_over=true
 	end
 	if(is_tile(lose,x,y)) then
-		get_key(x,y)
 		game_lose=true
 		game_over=true
 	end
@@ -229,26 +226,18 @@ function check_win_lose()
 	end
 end
 
-function player_interact()
-    if(is_enemy_at(win,p.x,p.y)) then
-        game_over = true
-        game_win = true
-        scene = true
-    elseif (is_enemy_at(lose,p.x,p.y)) then
-        game_over = true
-        game_win = false
-        scene = true
-    end
-end
-
 
 function draw_win_lose()
 	camera()
+
 	if (game_win) then
+		music(-1)
 		print("you have escaped prison!", 15,50,7)
-		print('it took you ' ..flr(counter).. ' seconds')
+		print('it took you '..flr(minutes)..' min and '..flr(counter%60).. ' sec')
 	else
-		print('you got caught in '..flr(counter).. ' seconds!' , 15,50,7)
+		music(-1)
+		print('you got caught in '..flr(minutes)..' min', 20,50,7)
+		print('and '..flr(counter%60).. ' sec', 50,60,7)
 	end
 		print("press ❎ to play again",20,72,5)
 end
@@ -346,6 +335,14 @@ function enemy_update_time()
 		return true
 	end
 	return false
+end
+
+
+--checks if player has hit an enemy
+function player_interact()
+	if(is_enemy_at(p.x,p.y)) then
+		game_over = true
+	end
 end
 --checks if player has hit an enemy
 
@@ -661,9 +658,11 @@ __sfx__
 000500000d02000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0004000015030180301b0301d0301f030220302602001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 0004000011050110501d0501d05020050230502005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-00030000082100821008210092100e220000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+000300000221005210092100c2100d0000b0000a00009000016000900008000080000800001600080000800007000070000600006000060000600006000070000700008000006000060000600006000060000600
 001300200312000120021200412003120001200012000120001200212003120031200212000120001200012001120031200412002120041200312000120011200312000120021200012000120021200212000120
 001800200771006710067100671007710077100871009710097100971009710097100a7100b7100c7100d7100d7100d7100c7100b7100a7100a71009710097100871008710077100771007710087100871009710
 00150020077100771007710067100771007710077100771007710077100771008710087100871008710087100871008710087100871008710087100871008710087100971009710097100a7100a7100a7100a710
+0006000012150101500f1500d1500a150081500615004150031500115000150001500c1500a150081500615005150031500215001150001500015007150061500415002150001500015000000000000000000000
 __music__
 03 04050607
+
